@@ -27,6 +27,7 @@ const DATA_URL = baseUrl + 'dataValueSets';
 
 
 const dataSet = require('./dataSet.json');
+const dataSets = require('./data-mapping.json');
 const ouMappings = require('./orgUnitMapping.json');
 
 // Sample data from lias
@@ -58,8 +59,12 @@ const readCSV = (url) => {
 };
 
 const convertCSV2JSON = async csv => {
-    const jsonArray = await csv2json().fromFile(csv);
-    return jsonArray;
+    try {
+        return await csv2json().fromFile(csv);
+    } catch (e) {
+        console.log(e);
+    }
+    return [];
 };
 
 /*
@@ -80,15 +85,17 @@ const downloadCSV = async (url) => {
 };
 
 const processWaterData = async () => {
-    const data = await convertCSV2JSON('water.csv');
-
+    const data = await convertCSV2JSON('./src/water.csv');
+    // const data = await convertCSV2JSON('./data_samples/Water_LocationTimeSeries_sample.csv');
     return data.map(d => {
         const val = {};
-        val['Data Element'] = 'Number of people eating fish';
-        val['CategoryOption Combo'] = 'M,F';
-        val['Organisation'] = ouMappings[d['LocationId']];
-        val['Value'] = d['EndValue'];
-        val['Period'] = '201810';
+        val['Parameter'] = 'Electrical Conductivity (microSec/cm)';
+        val['Category'] = 'default';
+        val['Location'] = ouMappings[d['LocationId']];
+        val['Value'] = d['EndValue']; //Computations might be applied here in case Timestamps data is used
+        val['Year'] = '2018July'; //Finanancial
+
+        console.info(ouMappings[d['LocationId']]);
         return val;
     });
 };
@@ -110,8 +117,7 @@ const processData = (dataSet, data) => {
     let dataValues = [];
 
     data = nest(data, [dataSet.dataElementColumn.value]);
-
-    const organisations = _.fromPairs(dataSet.organisationUnits.map(o => {
+    const dataSetUnits = _.fromPairs(dataSet.organisationUnits.map(o => {
         if (dataSet.orgUnitStrategy.value === 'name') {
             return [o.name, o.id];
         } else if (dataSet.orgUnitStrategy.value === 'code') {
@@ -122,32 +128,42 @@ const processData = (dataSet, data) => {
 
     forms.forEach(f => {
         let p = {};
-        data = f.dataElements.forEach(element => {
+        f.dataElements.forEach(element => {
             if (element.mapping) {
                 const foundData = data[element.mapping.value];
+                // console.log(foundData);
+                let groupedData = {};
+                if (foundData) {
+                    groupedData = _.fromPairs(foundData.map(d => {
+                        return [d[dataSet.categoryOptionComboColumn.value], {
+                            period: d[dataSet.periodColumn.value],
+                            value: d[dataSet.dataValueColumn.value],
+                            orgUnit: d[dataSet.orgUnitColumn.value]
+                        }]
+                    }));
 
-                const groupedData = _.fromPairs(foundData.map(d => {
-                    return [d[dataSet.categoryOptionComboColumn.value], {
-                        period: d[dataSet.periodColumn.value],
-                        value: d[dataSet.dataValueColumn.value],
-                        orgUnit: d[dataSet.orgUnitColumn.value]
-                    }]
-                }));
-                const obj = _.fromPairs([[element.id, groupedData]]);
-                p = {...p, ...obj}
+                    const obj = _.fromPairs([[element.id, groupedData]]);
+                    p = {...p, ...obj}
+                }
             }
         });
         data = p;
         if (data) {
             f.categoryOptionCombos.forEach(coc => {
                 _.forOwn(coc.mapping, (mapping, dataElement) => {
-                    dataValues = [...dataValues, {
-                        dataElement,
-                        value: data[dataElement][mapping.value]['value'],
-                        period: data[dataElement][mapping.value]['period'],
-                        categoryOptionCombo: coc.id,
-                        orgUnit: organisations[data[dataElement][mapping.value]['orgUnit']]
-                    }]
+                    // console.log(dataElement);
+                    if (data[dataElement]) {
+                        const orgUnit = dataSetUnits[data[dataElement][mapping.value]['orgUnit']];
+                        if (orgUnit) {
+                            dataValues = [...dataValues, {
+                                dataElement,
+                                value: data[dataElement][mapping.value]['value'],
+                                period: data[dataElement][mapping.value]['period'],
+                                categoryOptionCombo: coc.id,
+                                orgUnit
+                            }]
+                        }
+                    }
                 })
             });
         }
@@ -162,10 +178,27 @@ const processData = (dataSet, data) => {
     console.log(dataValues)
 });*/
 
+dataSets.forEach(async dataSet => {
+    //Otm1usl7iVh WATER FORM
+    //bU2LoHFGUzr
+    const id = dataSet.id;
+    let data = [];
+    if (id === 'bU2LoHFGUzr') {//National Monthly
+        data = require('./data_samples/lands_national_monthly.json');
+    } else if (id === 'EJMcDUrnwIZ') { //District Quarterly
+        data = require('./data_samples/lands_district_quaterly.json');
+    } else if (id === 'Otm1usl7iVh') {
+        data = await processWaterData();
+    }
 
-downloadCSV('https://people.sc.fsu.edu/~jburkardt/data/csv/addresses.csv').then(data => {
-    console.log(data);
-})
+    const dataValues = processData(dataSet, data);
+    console.log(dataValues);
+});
+
+
+// downloadCSV('https://people.sc.fsu.edu/~jburkardt/data/csv/addresses.csv').then(data => {
+//     console.log(data);
+// })
 
 /*
 
