@@ -1,0 +1,1334 @@
+[
+  {
+    "id": "Otm1usl7iVh",
+    "aggregateId": 1,
+    "orgUnitColumn": {
+      "label": "Location",
+      "value": "Location"
+    },
+    "periodColumn": {
+      "label": "Year",
+      "value": "Year"
+    },
+    "orgUnitStrategy": {
+      "value": "name",
+      "label": "name"
+    },
+    "dataElementColumn": {
+      "label": "Parameter",
+      "value": "Parameter"
+    },
+    "categoryOptionComboColumn": {
+      "label": "Category",
+      "value": "Category"
+    },
+    "dataValueColumn": {
+      "label": "Value",
+      "value": "Value"
+    },
+    "forms": [
+      {
+        "categoryOptionCombos": [
+          {
+            "id": "HllvX50cXC0",
+            "name": "default",
+            "mapping": {
+              "xu3lSx82LL4": {
+                "label": "default",
+                "value": "default"
+              },
+              "zK0rSFC7fqk": {
+                "label": "default",
+                "value": "default"
+              },
+              "ZWkOzMGPtdB": {
+                "label": "default",
+                "value": "default"
+              },
+              "lcPmCgeU4JZ": {
+                "label": "default",
+                "value": "default"
+              },
+              "Y1Iow5rJFKF": {
+                "label": "default",
+                "value": "default"
+              },
+              "EIzuOlmzyiU": {
+                "label": "default",
+                "value": "default"
+              },
+              "XIWZqyObPzs": {
+                "label": "default",
+                "value": "default"
+              },
+              "ZCE45smh92R": {
+                "label": "default",
+                "value": "default"
+              },
+              "UYUdjdtldUw": {
+                "label": "default",
+                "value": "default"
+              },
+              "IIFnENbrQ4s": {
+                "label": "default",
+                "value": "default"
+              },
+              "QfsAHw8RRdR": {
+                "label": "default",
+                "value": "default"
+              }
+            },
+            "cell": {}
+          }
+        ],
+        "dataElements": [
+          {
+            "id": "rARfj2FiFGo",
+            "code": "PAR5",
+            "name": "Turbidity (NTU)",
+            "mapping": {
+              "label": "Turbidity (NTU)",
+              "value": "Turbidity (NTU)"
+            },
+            "uniqueCategoryOptionCombos": [
+              {
+                "label": "default",
+                "value": "default"
+              },
+              {
+                "label": "default",
+                "value": "default"
+              }
+            ]
+          },
+          {
+            "id": "zK0rSFC7fqk",
+            "code": "PAR2",
+            "name": "Dissolved Oxygen (%)",
+            "mapping": {
+              "label": "Dissolved Oxygen (%)",
+              "value": "Dissolved Oxygen (%)"
+            },
+            "uniqueCategoryOptionCombos": [
+              {
+                "label": "default",
+                "value": "default"
+              },
+              {
+                "label": "default",
+                "value": "default"
+              }
+            ]
+          },
+          {
+            "id": "ZWkOzMGPtdB",
+            "code": "PAR4",
+            "name": "Total Suspended Solids-TSS (mg/L)",
+            "mapping": {
+              "label": "Total Suspended Solids-TSS (mg/L)",
+              "value": "Total Suspended Solids-TSS (mg/L)"
+            },
+            "uniqueCategoryOptionCombos": [
+              {
+                "label": "default",
+                "value": "default"
+              },
+              {
+                "label": "default",
+                "value": "default"
+              }
+            ]
+          },
+          {
+            "id": "lcPmCgeU4JZ",
+            "name": "Overall Compliance Rate (WQIdx)",
+            "mapping": {
+              "label": "Overall Compliance Rate",
+              "value": "Overall Compliance Rate"
+            },
+            "uniqueCategoryOptionCombos": [
+              {
+                "label": "default",
+                "value": "default"
+              },
+              {
+                "label": "default",
+                "value": "default"
+              }
+            ]
+          },
+          {
+            "id": "Y1Iow5rJFKF",
+            "code": "PAR9",
+            "name": "DIN (mg/L)",
+            "mapping": {
+              "label": "DIN (mg/L)",
+              "value": "DIN (mg/L)"
+            },
+            "uniqueCategoryOptionCombos": [
+              {
+                "label": "default",
+                "value": "default"
+              },
+              {
+                "label": "default",
+                "value": "default"
+              }
+            ]
+          },
+          {
+            "id": "EIzuOlmzyiU",
+            "code": "PAR1",
+            "name": "Electrical Conductivity (microSec/cm)",
+            "mapping": {
+              "label": "Electrical Conductivity (microSec/cm)",
+              "value": "Electrical Conductivity (microSec/cm)"
+            },
+            "uniqueCategoryOptionCombos": [
+              {
+                "label": "default",
+                "value": "default"
+              },
+              {
+                "label": "default",
+                "value": "default"
+              }
+            ]
+          },
+          {
+            "id": "XIWZqyObPzs",
+            "code": "PAR8",
+            "name": "DIP (mg/L)",
+            "mapping": {
+              "label": "DIP (mg/L)",
+              "value": "DIP (mg/L)"
+            },
+            "uniqueCategoryOptionCombos": [
+              {
+                "label": "default",
+                "value": "default"
+              },
+              {
+                "label": "default",
+                "value": "default"
+              }
+            ]
+          },
+          {
+            "id": "ZCE45smh92R",
+            "code": "PAR10",
+            "name": "Coliform Bacteria",
+            "mapping": {
+              "label": "Coliform Bacteria (e-Coli)",
+              "value": "Coliform Bacteria (e-Coli)"
+            },
+            "uniqueCategoryOptionCombos": [
+              {
+                "label": "default",
+                "value": "default"
+              },
+              {
+                "label": "default",
+                "value": "default"
+              }
+            ]
+          },
+          {
+            "id": "UYUdjdtldUw",
+            "code": "PAR6",
+            "name": "pH (no unit)",
+            "mapping": {
+              "label": "pH (no unit)",
+              "value": "pH (no unit)"
+            },
+            "uniqueCategoryOptionCombos": [
+              {
+                "label": "default",
+                "value": "default"
+              },
+              {
+                "label": "default",
+                "value": "default"
+              }
+            ]
+          },
+          {
+            "id": "IIFnENbrQ4s",
+            "code": "PAR7",
+            "name": "Temperature",
+            "mapping": {
+              "label": "Temperature (C)",
+              "value": "Temperature (C)"
+            },
+            "uniqueCategoryOptionCombos": [
+              {
+                "label": "default",
+                "value": "default"
+              },
+              {
+                "label": "default",
+                "value": "default"
+              }
+            ]
+          },
+          {
+            "id": "QfsAHw8RRdR",
+            "name": "Core Parameter Compliance Rate(WQCoreIdx)",
+            "mapping": {
+              "label": "Core Parameter Compliance Rate",
+              "value": "Core Parameter Compliance Rate"
+            },
+            "uniqueCategoryOptionCombos": [
+              {
+                "label": "default",
+                "value": "default"
+              },
+              {
+                "label": "default",
+                "value": "default"
+              }
+            ]
+          },
+          {
+            "id": "xu3lSx82LL4",
+            "code": "PAR3",
+            "name": "Total Disolved Solids -TDS (mg/L)",
+            "mapping": {
+              "label": "Total Disolved Solids -TDS (mg/L)",
+              "value": "Total Disolved Solids -TDS (mg/L)"
+            },
+            "uniqueCategoryOptionCombos": [
+              {
+                "label": "default",
+                "value": "default"
+              },
+              {
+                "label": "default",
+                "value": "default"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "organisationUnits": [
+      {
+        "id": "cgGiDhuQ8GJ",
+        "name": "WCSITE_37",
+        "code": "SITE_37"
+      },
+      {
+        "id": "EYW3whigqAy",
+        "name": "WCSITE_39",
+        "code": "SITE_39"
+      },
+      {
+        "id": "bdf5iIgJ7tU",
+        "name": "WCSITE_57",
+        "code": "SITE_57"
+      },
+      {
+        "id": "Fz1g25hdJXt",
+        "name": "WCSITE_46",
+        "code": "SITE_46"
+      },
+      {
+        "id": "y6Tp9IFcDkm",
+        "name": "WCSITE_17",
+        "code": "SITE_17"
+      },
+      {
+        "id": "gGNN3WpDjpi",
+        "name": "WCSITE_14",
+        "code": "SITE_14"
+      },
+      {
+        "id": "w7sO7T5HKWI",
+        "name": "WCSITE_22",
+        "code": "SITE_22"
+      },
+      {
+        "id": "di1JxxSuLh3",
+        "name": "WCSITE_32",
+        "code": "SITE_32"
+      },
+      {
+        "id": "BS7T4ReVRai",
+        "name": "WCSITE_11",
+        "code": "SITE_11"
+      },
+      {
+        "id": "TJKqZHheZ79",
+        "name": "WCSITE_20",
+        "code": "SITE_20"
+      },
+      {
+        "id": "vKTaRkemMvh",
+        "name": "WCSITE_48",
+        "code": "SITE_48"
+      },
+      {
+        "id": "g1yKdxsKRBF",
+        "name": "WCSITE_24",
+        "code": "SITE_24"
+      },
+      {
+        "id": "TXhg5F9TLMa",
+        "name": "WCSITE_41",
+        "code": "SITE_41"
+      },
+      {
+        "id": "nO5qyd31wqN",
+        "name": "WCSITE_43",
+        "code": "SITE_43"
+      },
+      {
+        "id": "znGMqYUbHM6",
+        "name": "WCSITE_35",
+        "code": "SITE_35"
+      },
+      {
+        "id": "M2JKHS98dJ5",
+        "name": "WCSITE_15",
+        "code": "SITE_15"
+      },
+      {
+        "id": "ysPlw8DI7Ef",
+        "name": "WCSITE_23",
+        "code": "SITE_23"
+      },
+      {
+        "id": "uxF3ldU5Hi1",
+        "name": "WCSITE_12",
+        "code": "SITE_12"
+      },
+      {
+        "id": "jKK2Q1CoXK8",
+        "name": "WCSITE_58",
+        "code": "SITE_58"
+      },
+      {
+        "id": "AYNipaFntVB",
+        "name": "WCSITE_50",
+        "code": "SITE_50"
+      },
+      {
+        "id": "o60JHZ0zAQT",
+        "name": "WCSITE_28",
+        "code": "SITE_28"
+      },
+      {
+        "id": "OCLfMQQOiaa",
+        "name": "WCSITE_45",
+        "code": "SITE_45"
+      },
+      {
+        "id": "aDd1yYW5Byv",
+        "name": "WCSITE_04",
+        "code": "SITE_4"
+      },
+      {
+        "id": "tokeF8PVvBr",
+        "name": "WCSITE_01",
+        "code": "SITE_1"
+      },
+      {
+        "id": "GIDJxQJoh7y",
+        "name": "WCSITE_56",
+        "code": "SITE_56"
+      },
+      {
+        "id": "mpGesIAe2L7",
+        "name": "WCSITE_16",
+        "code": "SITE_16"
+      },
+      {
+        "id": "wP0ftCulyi8",
+        "name": "WCSITE_19",
+        "code": "SITE_19"
+      },
+      {
+        "id": "EKngNHkBtpR",
+        "name": "WCSITE_02",
+        "code": "SITE_2"
+      },
+      {
+        "id": "WGGNDOV7v6F",
+        "name": "WCSITE_30",
+        "code": "SITE_30"
+      },
+      {
+        "id": "xZKKuy9nTfS",
+        "name": "WCSITE_08",
+        "code": "SITE_8"
+      },
+      {
+        "id": "fswXxKdKAKR",
+        "name": "WCSITE_06",
+        "code": "SITE_6"
+      },
+      {
+        "id": "lXZw0PRbeX2",
+        "name": "WCSITE_47",
+        "code": "SITE_47"
+      },
+      {
+        "id": "LMiBa501xxa",
+        "name": "WCSITE_21",
+        "code": "SITE_21"
+      },
+      {
+        "id": "XRi3v2yW5uW",
+        "name": "WCSITE_09",
+        "code": "SITE_9"
+      },
+      {
+        "id": "mGbW4D3h5QT",
+        "name": "WCSITE_42",
+        "code": "SITE_42"
+      },
+      {
+        "id": "WOvq8CVefB0",
+        "name": "WCSITE_05",
+        "code": "SITE_5"
+      },
+      {
+        "id": "w8rGEO7kJJM",
+        "name": "WCSITE_18",
+        "code": "SITE_18"
+      },
+      {
+        "id": "NibTVTr7YZX",
+        "name": "WCSITE_29",
+        "code": "SITE_29"
+      },
+      {
+        "id": "Hz26ZhpRuFL",
+        "name": "WCSITE_53",
+        "code": "SITE_53"
+      },
+      {
+        "id": "PC1E5MekHFw",
+        "name": "WCSITE_51",
+        "code": "SITE_51"
+      },
+      {
+        "id": "ibVu4D7oZvo",
+        "name": "WCSITE_26",
+        "code": "SITE_26"
+      },
+      {
+        "id": "CaFGZicy1mg",
+        "name": "WCSITE_07",
+        "code": "SITE_7"
+      },
+      {
+        "id": "UO2KuYt80Cq",
+        "name": "WCSITE_44",
+        "code": "SITE_44"
+      },
+      {
+        "id": "QqXWD2YQ0GB",
+        "name": "WCSITE_03",
+        "code": "SITE_3"
+      },
+      {
+        "id": "XYCuOa1UuzX",
+        "name": "WCSITE_13",
+        "code": "SITE_13"
+      },
+      {
+        "id": "uKsBjot4dro",
+        "name": "WCSITE_27",
+        "code": "SITE_27"
+      },
+      {
+        "id": "I4b0lrS4wnt",
+        "name": "WCSITE_10",
+        "code": "SITE_10"
+      },
+      {
+        "id": "nypWKSQiK9u",
+        "name": "WCSITE_40",
+        "code": "SITE_40"
+      },
+      {
+        "id": "BgpS67OSvhd",
+        "name": "WCSITE_31",
+        "code": "SITE_31"
+      },
+      {
+        "id": "ceeWC0xYvOS",
+        "name": "WCSITE_55",
+        "code": "SITE_55"
+      },
+      {
+        "id": "x986eaQSmmx",
+        "name": "WCSITE_25",
+        "code": "SITE_25"
+      },
+      {
+        "id": "lEP1SGvwHuk",
+        "name": "WCSITE_54",
+        "code": "SITE_54"
+      },
+      {
+        "id": "wmCOKp90tm3",
+        "name": "WCSITE_49",
+        "code": "SITE_49"
+      },
+      {
+        "id": "IZzc0fwFRgM",
+        "name": "WCSITE_36",
+        "code": "SITE_36"
+      },
+      {
+        "id": "pyFDmul2KVC",
+        "name": "WCSITE_34",
+        "code": "SITE_34"
+      },
+      {
+        "id": "xIfq9c6tWeF",
+        "name": "WCSITE_33",
+        "code": "SITE_33"
+      },
+      {
+        "id": "GQ3lI3eXgZA",
+        "name": "WCSITE_52",
+        "code": "SITE_52"
+      },
+      {
+        "id": "lsTKeycBE0f",
+        "name": "WCSITE_38",
+        "code": "SITE_38"
+      }
+    ],
+    "periodType": "FinancialJuly"
+  },
+  {
+    "id": "bU2LoHFGUzr",
+    "name": "National Monthly report",
+    "aggregateId": 1,
+    "orgUnitColumn": {
+      "label": "Country",
+      "value": "Country"
+    },
+    "periodColumn": {
+      "label": "Month",
+      "value": "Month"
+    },
+    "orgUnitStrategy": {
+      "value": "name",
+      "label": "name"
+    },
+    "dataElementColumn": {
+      "label": "Data Element",
+      "value": "Data Element"
+    },
+    "categoryOptionComboColumn": {
+      "label": "Category",
+      "value": "Category"
+    },
+    "dataValueColumn": {
+      "label": "Value",
+      "value": "Value"
+    },
+    "forms": [
+      {
+        "categoryOptionCombos": [
+          {
+            "id": "HllvX50cXC0",
+            "name": "default",
+            "mapping": {
+              "ZqpPX9Gi9cQ": {
+                "label": "default",
+                "value": "default"
+              },
+              "lAaRHD0OUoI": {
+                "label": "default",
+                "value": "default"
+              }
+            },
+            "cell": {}
+          }
+        ],
+        "dataElements": [
+          {
+            "id": "lAaRHD0OUoI",
+            "name": "LAM12 - Public Access - Female - Actual",
+            "mapping": {
+              "label": "LAM12 - Public Access - Female - Actual",
+              "value": "LAM12 - Public Access - Female - Actual"
+            },
+            "uniqueCategoryOptionCombos": [
+              {
+                "label": "default",
+                "value": "default"
+              },
+              {
+                "label": "default",
+                "value": "default"
+              },
+              {
+                "label": "default",
+                "value": "default"
+              },
+              {
+                "label": "default",
+                "value": "default"
+              },
+              {
+                "label": "default",
+                "value": "default"
+              },
+              {
+                "label": "default",
+                "value": "default"
+              },
+              {
+                "label": "default",
+                "value": "default"
+              },
+              {
+                "label": "default",
+                "value": "default"
+              }
+            ]
+          },
+          {
+            "id": "ZqpPX9Gi9cQ",
+            "name": "LAM12 - Public Access - Male - Actual",
+            "mapping": {
+              "label": "LAM12 - Public Access - Male - Actual",
+              "value": "LAM12 - Public Access - Male - Actual"
+            },
+            "uniqueCategoryOptionCombos": [
+              {
+                "label": "default",
+                "value": "default"
+              },
+              {
+                "label": "default",
+                "value": "default"
+              },
+              {
+                "label": "default",
+                "value": "default"
+              },
+              {
+                "label": "default",
+                "value": "default"
+              },
+              {
+                "label": "default",
+                "value": "default"
+              },
+              {
+                "label": "default",
+                "value": "default"
+              },
+              {
+                "label": "default",
+                "value": "default"
+              },
+              {
+                "label": "default",
+                "value": "default"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "organisationUnits": [
+      {
+        "id": "ocApO88J34K",
+        "name": "Rwanda",
+        "code": "RWD"
+      }
+    ],
+    "periodType": "Monthly"
+  },
+  {
+    "id": "EJMcDUrnwIZ",
+    "aggregateId": 1,
+    "orgUnitColumn": {
+      "label": "District",
+      "value": "District"
+    },
+    "periodColumn": {
+      "label": "Quarter",
+      "value": "Quarter"
+    },
+    "orgUnitStrategy": {
+      "value": "name",
+      "label": "name"
+    },
+    "dataElementColumn": {
+      "label": "Data Element",
+      "value": "Data Element"
+    },
+    "categoryOptionComboColumn": {
+      "label": "Category",
+      "value": "Category"
+    },
+    "dataValueColumn": {
+      "label": "Value",
+      "value": "Value"
+    },
+    "forms": [
+      {
+        "categoryOptionCombos": [
+          {
+            "id": "XozyGVW2fJL",
+            "name": "Cancelling a caveat",
+            "mapping": {
+              "j2eablH0pUR": {
+                "label": "3. Cancelling a caveat",
+                "value": "3. Cancelling a caveat"
+              }
+            },
+            "cell": {}
+          },
+          {
+            "id": "Y918v8IV2Os",
+            "name": "Cancelling Condominium",
+            "mapping": {
+              "j2eablH0pUR": {
+                "label": "2. Cancelling Condominium",
+                "value": "2. Cancelling Condominium"
+              }
+            },
+            "cell": {}
+          },
+          {
+            "id": "oxECuBSaADu",
+            "name": "Cancelling a Mortgage",
+            "mapping": {
+              "j2eablH0pUR": {
+                "label": "10. Cancelling a Mortgage",
+                "value": "10. Cancelling a Mortgage"
+              }
+            },
+            "cell": {}
+          },
+          {
+            "id": "bXURr8C8Bd7",
+            "name": "Cancelling of Seizure",
+            "mapping": {
+              "j2eablH0pUR": {
+                "label": "17. Cancelling of Seizure",
+                "value": "17. Cancelling of Seizure"
+              }
+            },
+            "cell": {}
+          },
+          {
+            "id": "AaiOoR4DbsL",
+            "name": "Split into Condominium",
+            "mapping": {
+              "j2eablH0pUR": {
+                "label": "4. Split into Condominium",
+                "value": "4. Split into Condominium"
+              }
+            },
+            "cell": {}
+          },
+          {
+            "id": "mI7mCz0anvB",
+            "name": "Establishing a caveat",
+            "mapping": {
+              "j2eablH0pUR": {
+                "label": "5. Establishing a caveat",
+                "value": "5. Establishing a caveat"
+              }
+            },
+            "cell": {}
+          },
+          {
+            "id": "RQFxCXgyMXl",
+            "name": "Establishing a Mortgage",
+            "mapping": {
+              "j2eablH0pUR": {
+                "label": "12. Establishing a Mortgage",
+                "value": "12. Establishing a Mortgage"
+              }
+            },
+            "cell": {}
+          },
+          {
+            "id": "nSt01r75SnD",
+            "name": "Establishing a Seizure",
+            "mapping": {
+              "j2eablH0pUR": {
+                "label": "19. Establishing a Seizure",
+                "value": "19. Establishing a Seizure"
+              }
+            },
+            "cell": {}
+          },
+          {
+            "id": "S326JrJCBF8",
+            "name": "Donation",
+            "mapping": {
+              "j2eablH0pUR": {
+                "label": "6. Donation",
+                "value": "6. Donation"
+              }
+            },
+            "cell": {}
+          },
+          {
+            "id": "dTTUzyRG6vn",
+            "name": "Division of Parcels",
+            "mapping": {
+              "j2eablH0pUR": {
+                "label": "7. Division of Parcels",
+                "value": "7. Division of Parcels"
+              }
+            },
+            "cell": {}
+          },
+          {
+            "id": "AZJ6nAXtyCR",
+            "name": "Expropriation",
+            "mapping": {
+              "j2eablH0pUR": {
+                "label": "8. Expropriation",
+                "value": "8. Expropriation"
+              }
+            },
+            "cell": {}
+          },
+          {
+            "id": "nQ6tddu9p2v",
+            "name": "Exchange",
+            "mapping": {
+              "j2eablH0pUR": {
+                "label": "9. Exchange",
+                "value": "9. Exchange"
+              }
+            },
+            "cell": {}
+          },
+          {
+            "id": "jIqBcnxJwt1",
+            "name": "Merging of Parcels",
+            "mapping": {
+              "j2eablH0pUR": {
+                "label": "11. Merging of Parcels",
+                "value": "11. Merging of Parcels"
+              }
+            },
+            "cell": {}
+          },
+          {
+            "id": "LnVO3tJxG5o",
+            "name": "Transfer of Mortgage",
+            "mapping": {
+              "j2eablH0pUR": {
+                "label": "13. Transfer of Mortgage",
+                "value": "13. Transfer of Mortgage"
+              }
+            },
+            "cell": {}
+          },
+          {
+            "id": "mZsfEw3SEM6",
+            "name": "Transfer on title by death",
+            "mapping": {
+              "j2eablH0pUR": {
+                "label": "21. Transfer on title by death",
+                "value": "21. Transfer on title by death"
+              }
+            },
+            "cell": {}
+          },
+          {
+            "id": "ixvGyNChSdp",
+            "name": "Transfer of Full title",
+            "mapping": {
+              "j2eablH0pUR": {
+                "label": "23. Transfer of Full title",
+                "value": "23. Transfer of Full title"
+              }
+            },
+            "cell": {}
+          },
+          {
+            "id": "EWmqzOMy45n",
+            "name": "Transfer of Emphyteutic Sub-lease",
+            "mapping": {
+              "j2eablH0pUR": {
+                "label": "25. Transfer of Emphyteutic Sub-lease",
+                "value": "25. Transfer of Emphyteutic Sub-lease"
+              }
+            },
+            "cell": {}
+          },
+          {
+            "id": "V2gOvGP42SK",
+            "name": "Transfer of Emphyteutic lease",
+            "mapping": {
+              "j2eablH0pUR": {
+                "label": "22. Transfer of Emphyteutic lease",
+                "value": "22. Transfer of Emphyteutic lease"
+              }
+            },
+            "cell": {}
+          },
+          {
+            "id": "unoTCiY9kWK",
+            "name": "Transfer of Condominium Rights",
+            "mapping": {
+              "j2eablH0pUR": {
+                "label": "34. Transfer of Condominium Rights",
+                "value": "34. Transfer of Condominium Rights"
+              }
+            },
+            "cell": {}
+          },
+          {
+            "id": "WyVHf82YT4Y",
+            "name": "Transfer of Conditional Title",
+            "mapping": {
+              "j2eablH0pUR": {
+                "label": "20. Transfer of Conditional Title",
+                "value": "20. Transfer of Conditional Title"
+              }
+            },
+            "cell": {}
+          },
+          {
+            "id": "ROnlSrZrllc",
+            "name": "Rectification by applicant",
+            "mapping": {
+              "j2eablH0pUR": {
+                "label": "14. Rectification by applicant",
+                "value": "14. Rectification by applicant"
+              }
+            },
+            "cell": {}
+          },
+          {
+            "id": "gL32dTaV0aO",
+            "name": "Rectification by Registrar",
+            "mapping": {
+              "j2eablH0pUR": {
+                "label": "16. Rectification by Registrar",
+                "value": "16. Rectification by Registrar"
+              }
+            },
+            "cell": {}
+          },
+          {
+            "id": "HuZo8THhVbc",
+            "name": "Rectification of Survey by Registrar",
+            "mapping": {
+              "j2eablH0pUR": {
+                "label": "15. Rectification of Survey by Registrar",
+                "value": "15. Rectification of Survey by Registrar"
+              }
+            },
+            "cell": {}
+          },
+          {
+            "id": "QZNmnpFZpmP",
+            "name": "Servitude",
+            "mapping": {
+              "j2eablH0pUR": {
+                "label": "18. Servitude",
+                "value": "18. Servitude"
+              }
+            },
+            "cell": {}
+          },
+          {
+            "id": "JPx4E4jngpZ",
+            "name": "Replacement of title",
+            "mapping": {
+              "j2eablH0pUR": {
+                "label": "24. Replacement of title",
+                "value": "24. Replacement of title"
+              }
+            },
+            "cell": {}
+          },
+          {
+            "id": "yXLfsoEiXMZ",
+            "name": "Change Parcel",
+            "mapping": {
+              "j2eablH0pUR": {
+                "label": "26. Change Parcel",
+                "value": "26. Change Parcel"
+              }
+            },
+            "cell": {}
+          },
+          {
+            "id": "moJpWPJUPRP",
+            "name": "Change Person",
+            "mapping": {
+              "j2eablH0pUR": {
+                "label": "27. Change Person",
+                "value": "27. Change Person"
+              }
+            },
+            "cell": {}
+          },
+          {
+            "id": "w1qjacETTYR",
+            "name": "First Registration",
+            "mapping": {
+              "j2eablH0pUR": {
+                "label": "28. First Registration",
+                "value": "28. First Registration"
+              }
+            },
+            "cell": {}
+          },
+          {
+            "id": "DqvyBwd65dH",
+            "name": "Remove Dispute",
+            "mapping": {
+              "j2eablH0pUR": {
+                "label": "29. Remove Dispute",
+                "value": "29. Remove Dispute"
+              }
+            },
+            "cell": {}
+          },
+          {
+            "id": "qsl4wVi0jzA",
+            "name": "Convert to Conditional Title",
+            "mapping": {
+              "j2eablH0pUR": {
+                "label": "30. Convert to Conditional Title",
+                "value": "30. Convert to Conditional Title"
+              }
+            },
+            "cell": {}
+          },
+          {
+            "id": "mUdrNa8Zatj",
+            "name": "Convert to Emphyteutic Lease",
+            "mapping": {
+              "j2eablH0pUR": {
+                "label": "31. Convert to Emphyteutic Lease",
+                "value": "31. Convert to Emphyteutic Lease"
+              }
+            },
+            "cell": {}
+          },
+          {
+            "id": "RddmRX7M2Ou",
+            "name": "Convert to Full Title",
+            "mapping": {
+              "j2eablH0pUR": {
+                "label": "32. Convert to Full Title",
+                "value": "32. Convert to Full Title"
+              }
+            },
+            "cell": {}
+          },
+          {
+            "id": "gRCkxO0u1q0",
+            "name": "Boundary Change",
+            "mapping": {
+              "j2eablH0pUR": {
+                "label": "33. Boundary Change",
+                "value": "33. Boundary Change"
+              }
+            },
+            "cell": {}
+          },
+          {
+            "id": "ltxPFzQI5HM",
+            "name": "Add Dispute",
+            "mapping": {
+              "j2eablH0pUR": {
+                "label": "35. Add Dispute",
+                "value": "35. Add Dispute"
+              }
+            },
+            "cell": {}
+          },
+          {
+            "id": "DlirXgf5OEV",
+            "name": "Transfer by court decision",
+            "mapping": {
+              "j2eablH0pUR": {
+                "label": "1. Court decision",
+                "value": "1. Court decision"
+              }
+            },
+            "cell": {}
+          }
+        ],
+        "dataElements": [
+          {
+            "id": "j2eablH0pUR",
+            "name": "LAM08 - Total number of land transactions registered",
+            "mapping": {
+              "label": "LAM08 - Total number of land transactions registered",
+              "value": "LAM08 - Total number of land transactions registered"
+            }
+          }
+        ]
+      }
+    ],
+    "organisationUnits": [
+      {
+        "id": "Z0MxRFyvdaG",
+        "name": "Kirehe",
+        "code": "RW.ES.KH"
+      },
+      {
+        "id": "LweyQ9rxJbP",
+        "name": "Kicukiro",
+        "code": "RW.KV.KK"
+      },
+      {
+        "id": "mdm12fMcJuN",
+        "name": "Gakenke",
+        "code": "RW.NO.GK"
+      },
+      {
+        "id": "ETtWK7MuFb1",
+        "name": "Rwamagana",
+        "code": "RW.ES.RM"
+      },
+      {
+        "id": "JV7FRXfygy5",
+        "name": "Nyagatare",
+        "code": "RW.ES.NT"
+      },
+      {
+        "id": "eqB3EpO6HxG",
+        "name": "Nyaruguru",
+        "code": "RW.SU.NU"
+      },
+      {
+        "id": "T6NLioXVBBX",
+        "name": "Nyamagabe",
+        "code": "RW.SU.NY"
+      },
+      {
+        "id": "nB1tyt7Ghw2",
+        "name": "Nyamasheke",
+        "code": "RW.OU.NS"
+      },
+      {
+        "id": "bE4iPgUpnJh",
+        "name": "Gasabo",
+        "code": "RW.KV.GB"
+      },
+      {
+        "id": "vjCIw6WhViX",
+        "name": "Nyarugenge",
+        "code": "RW.KV.NG"
+      },
+      {
+        "id": "mYhXbvQMgKi",
+        "name": "Ngoma",
+        "code": "RW.ES.NM"
+      },
+      {
+        "id": "faCyamJFO4V",
+        "name": "Gisagara",
+        "code": "RW.SU.GG"
+      },
+      {
+        "id": "zOPAeYqXqha",
+        "name": "Musanze",
+        "code": "RW.NO.MS"
+      },
+      {
+        "id": "D08wGsCkMtd",
+        "name": "Rusizi",
+        "code": "RW.OU.RS"
+      },
+      {
+        "id": "Gsc3zY13g6y",
+        "name": "Burera",
+        "code": "RW.NO.BR"
+      },
+      {
+        "id": "zO9MRVrmbdE",
+        "name": "Nyanza",
+        "code": "RW.SU.NZ"
+      },
+      {
+        "id": "VOYHddO6fNJ",
+        "name": "Rubavu",
+        "code": "RW.OU.RB"
+      },
+      {
+        "id": "CFfOokeLMIP",
+        "name": "Gicumbi",
+        "code": "RW.NO.GC"
+      },
+      {
+        "id": "MjGQ9dO0fWP",
+        "name": "Ngororero",
+        "code": "RW.OU.NR"
+      },
+      {
+        "id": "hgBbFwhTPIK",
+        "name": "Nyabihu",
+        "code": "RW.OU.NB"
+      },
+      {
+        "id": "WQIBTmTqZCE",
+        "name": "Gatsibo",
+        "code": "RW.ES.GT"
+      },
+      {
+        "id": "FtHpidadBSE",
+        "name": "Kamonyi",
+        "code": "RW.SU.KM"
+      },
+      {
+        "id": "kbwtu5D99WV",
+        "name": "Kayonza",
+        "code": "RW.ES.KZ"
+      },
+      {
+        "id": "YuXPwRPcOIl",
+        "name": "Rulindo",
+        "code": "RW.NO.RL"
+      },
+      {
+        "id": "EV0z6mnMMxk",
+        "name": "Rutsiro",
+        "code": "RW.OU.RT"
+      },
+      {
+        "id": "liRoLH5pgTZ",
+        "name": "Huye",
+        "code": "RW.SU.HU"
+      },
+      {
+        "id": "GNSnAaAL2cZ",
+        "name": "Bugesera",
+        "code": "RW.ES.BG"
+      },
+      {
+        "id": "Dw1pde912dq",
+        "name": "Ruhango",
+        "code": "RW.SU.RH"
+      },
+      {
+        "id": "fqwwrXcDNSz",
+        "name": "Karongi",
+        "code": "RW.OU.KG"
+      },
+      {
+        "id": "ihRFxco3pM3",
+        "name": "Muhanga",
+        "code": "RW.SU.MH"
+      }
+    ],
+    "periodType": "Quarterly"
+  }
+]
