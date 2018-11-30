@@ -1,0 +1,492 @@
+[
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "1. Court decision",
+    "District": "Gasabo",
+    "Quarter": "2018Q1",
+    "Value": 6
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "2. Cancelling Condominium",
+    "District": "Gasabo",
+    "Quarter": "2018Q1",
+    "Value": 10
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "3. Cancelling a caveat",
+    "District": "Gasabo",
+    "Quarter": "2018Q1",
+    "Value": 6
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "4. Split into Condominium",
+    "District": "Gasabo",
+    "Quarter": "2018Q1",
+    "Value": 2
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "5. Establishing a caveat",
+    "District": "Gasabo",
+    "Quarter": "2018Q1",
+    "Value": 6
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "6. Donation",
+    "District": "Gasabo",
+    "Quarter": "2018Q1",
+    "Value": 10
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "7. Division of Parcels",
+    "District": "Gasabo",
+    "Quarter": "2018Q1",
+    "Value": 7
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "8. Expropriation",
+    "District": "Gasabo",
+    "Quarter": "2018Q1",
+    "Value": 10
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "9. Exchange",
+    "District": "Gasabo",
+    "Quarter": "2018Q1",
+    "Value": 6
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "10. Cancelling a Mortgage",
+    "District": "Gasabo",
+    "Quarter": "2018Q1",
+    "Value": 15
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "11. Merging of Parcels",
+    "District": "Gasabo",
+    "Quarter": "2018Q1",
+    "Value": 6
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "12. Establishing a Mortgage",
+    "District": "Gasabo",
+    "Quarter": "2018Q1",
+    "Value": 67
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "13. Transfer of Mortgage",
+    "District": "Gasabo",
+    "Quarter": "2018Q1",
+    "Value": 8
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "14. Rectification by applicant",
+    "District": "Gasabo",
+    "Quarter": "2018Q1",
+    "Value": 10
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "15. Rectification of Survey by Registrar",
+    "District": "Gasabo",
+    "Quarter": "2018Q1",
+    "Value": 7
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "16. Rectification by Registrar",
+    "District": "Gasabo",
+    "Quarter": "2018Q1",
+    "Value": 10
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "17. Cancelling of Seizure",
+    "District": "Gasabo",
+    "Quarter": "2018Q1",
+    "Value": 0
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "18. Servitude",
+    "District": "Gasabo",
+    "Quarter": "2018Q1",
+    "Value": 10
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "19. Establishing a Seizure",
+    "District": "Gasabo",
+    "Quarter": "2018Q1",
+    "Value": 2
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "20. Transfer of Conditional Title",
+    "District": "Gasabo",
+    "Quarter": "2018Q1",
+    "Value": 10
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "21. Transfer on title by death",
+    "District": "Gasabo",
+    "Quarter": "2018Q1",
+    "Value": 1
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "22. Transfer of Emphyteutic lease",
+    "District": "Gasabo",
+    "Quarter": "2018Q1",
+    "Value": 2
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "23. Transfer of Full title",
+    "District": "Gasabo",
+    "Quarter": "2018Q1",
+    "Value": 6
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "24. Replacement of title",
+    "District": "Gasabo",
+    "Quarter": "2018Q1",
+    "Value": 10
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "25. Transfer of Emphyteutic Sub-lease",
+    "District": "Gasabo",
+    "Quarter": "2018Q1",
+    "Value": 6
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "26. Change Parcel",
+    "District": "Gasabo",
+    "Quarter": "2018Q1",
+    "Value": 10
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "27. Change Person",
+    "District": "Gasabo",
+    "Quarter": "2018Q1",
+    "Value": 6
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "28. First Registration",
+    "District": "Gasabo",
+    "Quarter": "2018Q1",
+    "Value": 10
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "29. Remove Dispute",
+    "District": "Gasabo",
+    "Quarter": "2018Q1",
+    "Value": 6
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "30. Convert to Conditional Title",
+    "District": "Gasabo",
+    "Quarter": "2018Q1",
+    "Value": 10
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "31. Convert to Emphyteutic Lease",
+    "District": "Gasabo",
+    "Quarter": "2018Q1",
+    "Value": 6
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "32. Convert to Full Title",
+    "District": "Gasabo",
+    "Quarter": "2018Q1",
+    "Value": 10
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "33. Boundary Change",
+    "District": "Gasabo",
+    "Quarter": "2018Q1",
+    "Value": 6
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "34. Transfer of Condominium Rights",
+    "District": "Gasabo",
+    "Quarter": "2018Q1",
+    "Value": 10
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "35. Add Dispute",
+    "District": "Gasabo",
+    "Quarter": "2018Q1",
+    "Value": 6
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "1. Court decision",
+    "District": "Kigali",
+    "Quarter": "2018Q1",
+    "Value": 50
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "2. Cancelling Condominium",
+    "District": "Kigali",
+    "Quarter": "2018Q1",
+    "Value": 10
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "3. Cancelling a caveat",
+    "District": "Kigali",
+    "Quarter": "2018Q1",
+    "Value": 68
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "4. Split into Condominium",
+    "District": "Kigali",
+    "Quarter": "2018Q1",
+    "Value": 75
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "5. Establishing a caveat",
+    "District": "Kigali",
+    "Quarter": "2018Q1",
+    "Value": 6
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "6. Donation",
+    "District": "Kigali",
+    "Quarter": "2018Q1",
+    "Value": 80
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "7. Division of Parcels",
+    "District": "Kigali",
+    "Quarter": "2018Q1",
+    "Value": 7
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "8. Expropriation",
+    "District": "Kigali",
+    "Quarter": "2018Q1",
+    "Value": 45
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "9. Exchange",
+    "District": "Kigali",
+    "Quarter": "2018Q1",
+    "Value": 43
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "10. Cancelling a Mortgage",
+    "District": "Kigali",
+    "Quarter": "2018Q1",
+    "Value": 23
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "11. Merging of Parcels",
+    "District": "Kigali",
+    "Quarter": "2018Q1",
+    "Value": 6
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "12. Establishing a Mortgage",
+    "District": "Kigali",
+    "Quarter": "2018Q1",
+    "Value": 67
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "13. Transfer of Mortgage",
+    "District": "Kigali",
+    "Quarter": "2018Q1",
+    "Value": 8
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "14. Rectification by applicant",
+    "District": "Kigali",
+    "Quarter": "2018Q1",
+    "Value": 10
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "15. Rectification of Survey by Registrar",
+    "District": "Kigali",
+    "Quarter": "2018Q1",
+    "Value": 7
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "16. Rectification by Registrar",
+    "District": "Kigali",
+    "Quarter": "2018Q1",
+    "Value": 7
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "17. Cancelling of Seizure",
+    "District": "Kigali",
+    "Quarter": "2018Q1",
+    "Value": 0
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "18. Servitude",
+    "District": "Kigali",
+    "Quarter": "2018Q1",
+    "Value": 76
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "19. Establishing a Seizure",
+    "District": "Kigali",
+    "Quarter": "2018Q1",
+    "Value": 54
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "20. Transfer of Conditional Title",
+    "District": "Kigali",
+    "Quarter": "2018Q1",
+    "Value": 10
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "21. Transfer on title by death",
+    "District": "Kigali",
+    "Quarter": "2018Q1",
+    "Value": 87
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "22. Transfer of Emphyteutic lease",
+    "District": "Kigali",
+    "Quarter": "2018Q1",
+    "Value": 2
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "23. Transfer of Full title",
+    "District": "Kigali",
+    "Quarter": "2018Q1",
+    "Value": 6
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "24. Replacement of title",
+    "District": "Kigali",
+    "Quarter": "2018Q1",
+    "Value": 10
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "25. Transfer of Emphyteutic Sub-lease",
+    "District": "Kigali",
+    "Quarter": "2018Q1",
+    "Value": 6
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "26. Change Parcel",
+    "District": "Kigali",
+    "Quarter": "2018Q1",
+    "Value": 10
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "27. Change Person",
+    "District": "Kigali",
+    "Quarter": "2018Q1",
+    "Value": 6
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "28. First Registration",
+    "District": "Kigali",
+    "Quarter": "2018Q1",
+    "Value": 10
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "29. Remove Dispute",
+    "District": "Kigali",
+    "Quarter": "2018Q1",
+    "Value": 6
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "30. Convert to Conditional Title",
+    "District": "Kigali",
+    "Quarter": "2018Q1",
+    "Value": 10
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "31. Convert to Emphyteutic Lease",
+    "District": "Kigali",
+    "Quarter": "2018Q1",
+    "Value": 6
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "32. Convert to Full Title",
+    "District": "Kigali",
+    "Quarter": "2018Q1",
+    "Value": 10
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "33. Boundary Change",
+    "District": "Kigali",
+    "Quarter": "2018Q1",
+    "Value": 6
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "34. Transfer of Condominium Rights",
+    "District": "Kigali",
+    "Quarter": "2018Q1",
+    "Value": 10
+  },
+  {
+    "Data Element": "LAM08 - Total number of land transactions registered",
+    "Category": "35. Add Dispute",
+    "District": "Kigali",
+    "Quarter": "2018Q1",
+    "Value": 6
+  }
+]
