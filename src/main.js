@@ -1,10 +1,7 @@
-const moment = require('moment');
 const rq = require('request-promise');
 const _ = require('lodash');
 const minimist = require('minimist');
-const fs = require("fs");
 const url = require('url').URL;
-const isReachable = require('is-reachable');
 const winston = require('./winston');
 
 const csv2json = require("csvtojson");
@@ -12,35 +9,25 @@ const csv2json = require("csvtojson");
 const args = minimist(process.argv.slice(2));
 
 
-const username = args['dhis2-username'] || 'admin';
-const password = args['dhis2-password'] || 'district';
-const dhisUrl = args['dhis2-url'] || 'http://localhost:8080/dhis';
+const username = args['dhis2-username'] || 'Jeric';
+const password = args['dhis2-password'] || '20SeraPkp8FA!18';
+const dhisUrl = args['dhis2-url'] || 'http://localhost:8080';
+
+const serverUrl = 'http://10.10.82.196/AQUARIUS/Publish/AquariusPublishRestService.svc/';
+
 
 const dhis2 = new url(dhisUrl);
 
 dhis2.username = username;
 dhis2.password = password;
 
-const baseUrl = dhis2.toString() + '/api/';
+const baseUrl = dhis2.toString() + 'api/';
 
 const DATA_URL = baseUrl + 'dataValueSets';
 
 
-const dataSet = require('./dataSet.json');
-const dataSets = require('./data-mapping.json');
+const dataSets = require('./dataMapping.json');
 const ouMappings = require('./orgUnitMapping.json');
-
-// Sample data from lias
-const liasSampleData = [
-    {
-        "Data Element": "Number of people eating fish",
-        "CategoryOption Combo": "M,F",
-        "Period": "201810",
-        "Value": 10,
-        "Organisation": "Ngelehun CHC",
-        "Sex": "Male"
-    }
-];
 
 const nest = (seq, keys) => {
     if (!keys.length)
@@ -53,55 +40,57 @@ const nest = (seq, keys) => {
 };
 
 
-const readCSV = (url) => {
-    const buffer = fs.readFileSync(url);
-    return bufferToExcel(buffer);
+const login = async () => {
+    const url = serverUrl + 'GetAuthToken';
+    const params = {user: 'rbme', encPwd: 'D@ta!'};
+    const response = await rq({uri: url, qs: params, encoding: null});
+    return response.toString('utf8');
 };
 
-const convertCSV2JSON = async csv => {
-    try {
-        return await csv2json().fromFile(csv);
-    } catch (e) {
-        console.log(e);
-    }
-    return [];
-};
 
-/*
-* Read CSV file from url
-* args: csv url
-* return json
-* */
-
-const downloadCSV = async (url) => {
+const downloadData = async (endpoint, params) => {
+    const token = await login();
+    const url = serverUrl + endpoint;
+    params = {...params, token};
     try {
-        const response = await rq({uri: url, encoding: null});
+        const response = await rq({uri: url, qs: params, encoding: null});
         const responseString = response.toString('utf8');
-        const data = await csv2json().fromString(responseString);
-        return data
+        return await csv2json().fromString(responseString)
     } catch (error) {
         winston.log({level: 'warn', message: 'Something wired happened'});
     }
 };
 
-const processWaterData = async () => {
-    const data = await convertCSV2JSON('./src/water.csv');
-    // const data = await convertCSV2JSON('./data_samples/Water_LocationTimeSeries_sample.csv');
-    return data.map(d => {
-        const val = {};
-        val['Parameter'] = 'Electrical Conductivity (microSec/cm)';
-        val['Category'] = 'default';
-        val['Location'] = ouMappings[d['LocationId']];
-        val['Value'] = d['EndValue']; //Computations might be applied here in case Timestamps data is used
-        val['Year'] = '2018July'; //Finanancial
 
-        console.info(ouMappings[d['LocationId']]);
-        return val;
+const processWaterData = async dataElements => {
+    let data = await downloadData('GetDataSetsList', {});
+
+    let processed = [];
+
+    dataElements.forEach(de => {
+        const found = data.filter(d => {
+            return d['Parameter'] === de.param;
+        });
+        const realData = found.map(d => {
+            const val = {};
+            val['Parameter'] = de.mapping.value;
+            val['Category'] = 'default';
+            val['Location'] = ouMappings[d['LocationId']];
+            val['Value'] = d['EndValue']; //Computations might be applied here in case Timestamps data is used
+            val['Year'] = '2018July'; //Finanancial
+            return val;
+        }).filter(d => {
+            return d.Location;
+        });
+        processed = [...processed, ...realData];
+
     });
+    return processed;
 };
 
 
 const insertData = data => {
+    console.log(DATA_URL);
     const options = {
         method: 'POST',
         uri: DATA_URL,
@@ -154,6 +143,7 @@ const processData = (dataSet, data) => {
                     // console.log(dataElement);
                     if (data[dataElement]) {
                         const orgUnit = dataSetUnits[data[dataElement][mapping.value]['orgUnit']];
+                        console.log(data[dataElement][mapping.value]);
                         if (orgUnit) {
                             dataValues = [...dataValues, {
                                 dataElement,
@@ -173,40 +163,32 @@ const processData = (dataSet, data) => {
 
 };
 
-/*processWaterData().then(data => {
-    const dataValues = processData(dataSet, data);
-    console.log(dataValues)
-});*/
-
 dataSets.forEach(async dataSet => {
     //Otm1usl7iVh WATER FORM
     //bU2LoHFGUzr
     const id = dataSet.id;
-    let data = [];
+    let data;
     if (id === 'bU2LoHFGUzr') {//National Monthly
         data = require('./data_samples/lands_national_monthly.json');
     } else if (id === 'EJMcDUrnwIZ') { //District Quarterly
         data = require('./data_samples/lands_district_quaterly.json');
     } else if (id === 'Otm1usl7iVh') {
-        data = await processWaterData();
+        const form = dataSet.forms[0];
+        const dataElements = form.dataElements.filter(de => {
+            return de.param
+        });
+        data = await processWaterData(dataElements);
     }
 
     const dataValues = processData(dataSet, data);
-    console.log(dataValues);
+
+    try {
+        const response = await insertData({dataValues});
+        console.log(response);
+    } catch (e) {
+        console.log(e);
+    }
 });
-
-
-// downloadCSV('https://people.sc.fsu.edu/~jburkardt/data/csv/addresses.csv').then(data => {
-//     console.log(data);
-// })
-
-/*
-
-insertData({dataValues}).then(inserted => {
-    console.log(inserted)
-});*/
-
-
 
 
 
