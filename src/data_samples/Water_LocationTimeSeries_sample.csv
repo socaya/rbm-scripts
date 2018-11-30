@@ -1,0 +1,25 @@
+Parameter,Category,Location,Year,Value
+Electrical Conductivity (microSec/cm),default,Akagera after receiving Nyabarongo and Akanyaru at Kanzenze,2018,100000
+Dissolved Oxygen (%),default,Akagera after receiving Nyabarongo and Akanyaru at Kanzenze,2018,68
+Total Disolved Solids -TDS (mg/L),default,Akagera after receiving Nyabarongo and Akanyaru at Kanzenze,2018,560
+Total Suspended Solids-TSS (mg/L),default,Akagera after receiving Nyabarongo and Akanyaru at Kanzenze,2018,768
+Turbidity (NTU),default,Akagera after receiving Nyabarongo and Akanyaru at Kanzenze,2018,
+pH (no unit),default,Akagera after receiving Nyabarongo and Akanyaru at Kanzenze,2018,7.3
+Temperature (C),default,Akagera after receiving Nyabarongo and Akanyaru at Kanzenze,2018,33
+DIP (mg/L),default,Akagera after receiving Nyabarongo and Akanyaru at Kanzenze,2018,
+DIN (mg/L),default,Akagera after receiving Nyabarongo and Akanyaru at Kanzenze,2018,
+Coliform Bacteria (e-Coli),default,Akagera after receiving Nyabarongo and Akanyaru at Kanzenze,2018,
+Overall Compliance Rate,default,Akagera after receiving Nyabarongo and Akanyaru at Kanzenze,2018,65
+Core Parameter Compliance Rate,default,Akagera after receiving Nyabarongo and Akanyaru at Kanzenze,2018,64
+Electrical Conductivity (microSec/cm),default,Buganya river,2018,5000
+Dissolved Oxygen (%),default,Buganya river,2018,
+Total Disolved Solids -TDS (mg/L),default,Buganya river,2018,
+Total Suspended Solids-TSS (mg/L),default,Buganya river,2018,768
+Turbidity (NTU),default,Buganya river,2018,
+pH (no unit),default,Buganya river,2018,7.3
+Temperature (C),default,Buganya river,2018,33
+DIP (mg/L),default,Buganya river,2018,
+DIN (mg/L),default,Buganya river,2018,
+Coliform Bacteria (e-Coli),default,Buganya river,2018,
+Overall Compliance Rate,default,Buganya river,2018,65
+Core Parameter Compliance Rate,default,Buganya river,2018,64
